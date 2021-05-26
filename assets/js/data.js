@@ -69,7 +69,7 @@ const qnaList = [
 
 const resultList = [
   {
-    img: "../img/01.png",
+    img: "./assets/img/01.png",
     name: "금전수",
     desc: "금전수 추천합니다!!!!샬라샬라",
   },

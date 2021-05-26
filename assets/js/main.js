@@ -24,7 +24,7 @@ const goResult = () => {
         //음지
         if (num.indexOf("7") === 3) {
           //한달
-          img.src = "img/01.png";
+          img.src = resultList[0].img;
           resultName.innerText = resultList[0].name;
           resultDesc.innerText = resultList[0].desc;
           console.log("소형 무늬 음지 한달");
@@ -171,6 +171,13 @@ const goNext = (count) => {
     addAnswer(qnaList[count].a[i].answer, count, i);
   }
   status.style.width = (100 / endPoint) * count + "%";
+};
+
+const goToMain = () => {
+  result.classList.add("hide");
+  main.classList.remove("hide");
+  let count = 0;
+  select = 0;
 };
 
 const start = () => {
