@@ -4,9 +4,9 @@ const result = document.getElementById("result");
 const q = document.querySelector(".questionContainer");
 const a = document.querySelector(".anwerContainer");
 const status = document.querySelector(".statusBar");
-const resultName = document.querySelector(".resultName");
-const resultImg = document.querySelector(".resultImg");
-const resultDesc = document.querySelector(".resultDesc");
+const resultName = result.querySelector(".resultName");
+const img = result.querySelector("img");
+const resultDesc = result.querySelector(".resultDesc");
 
 let endPoint = 5;
 let select = 0;
@@ -15,7 +15,7 @@ const goResult = () => {
   qna.classList.add("hide");
   result.classList.remove("hide");
   let num = select.toString();
-  console.log(num);
+  console.log(num, img);
   if (select > 2000) {
     //소형
     if (select > 2200) {
@@ -24,8 +24,9 @@ const goResult = () => {
         //음지
         if (num.indexOf("7") === 3) {
           //한달
-          resultName.innerText = "금전수";
-          resultDesc.innerText = "추천합니다";
+          img.src = "img/01.png";
+          resultName.innerText = resultList[0].name;
+          resultDesc.innerText = resultList[0].desc;
           console.log("소형 무늬 음지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
@@ -169,7 +170,7 @@ const goNext = (count) => {
   for (let i in qnaList[count].a) {
     addAnswer(qnaList[count].a[i].answer, count, i);
   }
-  status.style.width = (100 / endPoint) * (count + 1) + "%";
+  status.style.width = (100 / endPoint) * count + "%";
 };
 
 const start = () => {
