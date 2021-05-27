@@ -235,7 +235,7 @@ const goNext = (count) => {
     return;
   }
 
-  q.innerText = qnaList[count].q;
+  q.innerHTML = qnaList[count].q;
   for (let i in qnaList[count].a) {
     addAnswer(qnaList[count].a[i].answer, count, i);
   }
