@@ -6,7 +6,8 @@ const a = document.querySelector(".anwerContainer");
 const status = document.querySelector(".statusBar");
 const resultName = result.querySelector(".resultName");
 const img = result.querySelector("img");
-const resultDesc = result.querySelector(".resultDesc");
+const resultDesc = result.querySelector(".resultDesc ul");
+const splash = document.getElementById("splash");
 
 let endPoint = 5;
 let select = 0;
@@ -25,19 +26,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[0].img;
-          resultName.innerText = resultList[0].name;
+          resultName.innerHTML = resultList[0].name;
           resultDesc.innerHTML = resultList[0].desc;
           console.log("소형 무늬 음지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[1].img;
-          resultName.innerText = resultList[1].name;
+          resultName.innerHTML = resultList[1].name;
           resultDesc.innerHTML = resultList[1].desc;
           console.log("소형 무늬 음지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[2].img;
-          resultName.innerText = resultList[2].name;
+          resultName.innerHTML = resultList[2].name;
           resultDesc.innerHTML = resultList[2].desc;
           console.log("소형 무늬 음지 1주");
         }
@@ -46,19 +47,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[3].img;
-          resultName.innerText = resultList[3].name;
+          resultName.innerHTML = resultList[3].name;
           resultDesc.innerHTML = resultList[3].desc;
           console.log("소형 무늬 양지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[4].img;
-          resultName.innerText = resultList[4].name;
+          resultName.innerHTML = resultList[4].name;
           resultDesc.innerHTML = resultList[4].desc;
           console.log("소형 무늬 양지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[5].img;
-          resultName.innerText = resultList[5].name;
+          resultName.innerHTML = resultList[5].name;
           resultDesc.innerHTML = resultList[5].desc;
           console.log("소형 무늬 양지 일주");
         }
@@ -70,19 +71,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[6].img;
-          resultName.innerText = resultList[6].name;
+          resultName.innerHTML = resultList[6].name;
           resultDesc.innerHTML = resultList[6].desc;
           console.log("소형 무난 음지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[7].img;
-          resultName.innerText = resultList[7].name;
+          resultName.innerHTML = resultList[7].name;
           resultDesc.innerHTML = resultList[7].desc;
           console.log("소형 무난 음지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[8].img;
-          resultName.innerText = resultList[8].name;
+          resultName.innerHTML = resultList[8].name;
           resultDesc.innerHTML = resultList[8].desc;
           console.log("소형 무난 음지 1주");
         }
@@ -91,19 +92,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[9].img;
-          resultName.innerText = resultList[9].name;
+          resultName.innerHTML = resultList[9].name;
           resultDesc.innerHTML = resultList[9].desc;
           console.log("소형 무난 양지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[10].img;
-          resultName.innerText = resultList[10].name;
+          resultName.innerHTML = resultList[10].name;
           resultDesc.innerHTML = resultList[10].desc;
           console.log("소형 무난 양지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[11].img;
-          resultName.innerText = resultList[11].name;
+          resultName.innerHTML = resultList[11].name;
           resultDesc.innerHTML = resultList[11].desc;
           console.log("소형 무난 양지 1주");
         }
@@ -231,7 +232,11 @@ const addAnswer = (answerText, count, idx) => {
 const goNext = (count) => {
   //console.log(q, count);
   if (count === endPoint) {
-    goResult();
+    splash.classList.remove("hide");
+    setTimeout(() => {
+      splash.classList.add("hide");
+      goResult();
+    }, 2500);
     return;
   }
 
@@ -239,7 +244,7 @@ const goNext = (count) => {
   for (let i in qnaList[count].a) {
     addAnswer(qnaList[count].a[i].answer, count, i);
   }
-  status.style.width = (100 / endPoint) * count + "%";
+  status.style.width = (100 / endPoint) * count + 1 + "%";
 };
 
 const goToMain = () => {

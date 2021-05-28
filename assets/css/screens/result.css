@@ -1,0 +1,49 @@
+#result h4 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#result img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+}
+#result .resultName {
+  font-family: "SangSangShinb7";
+  font-size: 36px;
+  margin: 30px 0;
+}
+#result ul {
+  list-style: none;
+}
+#result ul li::before {
+  position: absolute;
+  content: "•";
+  left: 0;
+  font-size: 14px;
+  color: var(--green);
+}
+#result .resultDesc li,
+.result-tip li {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.8;
+  padding-left: 16px;
+  margin-bottom: 5px;
+}
+#result .result-tip h6 {
+  margin: 30px 0 15px;
+  font-size: 16px;
+}
+
+#result button {
+  margin-top: 20px;
+}
+#kakao {
+  background-color: var(--yellow);
+}
+#kakao:hover {
+  background-color: var(--yellow-hover);
+}

@@ -1,0 +1,26 @@
+#qna {
+  height: 600px;
+  justify-content: space-between;
+  position: relative;
+}
+#qna .questionContainer {
+  text-align: left;
+  width: 320px;
+  position: absolute;
+  top: 90px;
+}
+.answerList {
+  width: 100%;
+  height: 60px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--green);
+  background-color: transparent;
+  color: var(--green);
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.answerList:hover {
+  color: white;
+  background-color: var(--green);
+}

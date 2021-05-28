@@ -1,0 +1,52 @@
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--green);
+  animation: fadeinout 2.5s ease-in-out;
+}
+#splash h4 {
+  width: 420px;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  margin: 150px 0;
+  text-align: center;
+}
+#loading {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}

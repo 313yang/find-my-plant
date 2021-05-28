@@ -14,37 +14,58 @@
     />
     <link rel="icon" href="favicon.ico?" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Find My Plant</title>
+    <title>Find My Plant | 반려식물 찾기 테스트</title>
   </head>
   <body>
-    <section id="main">
-      <div class="main-title"></div>
-      <h4>나만의 반려식물 찾기 테스트 🌱</h4>
-      <p>
-        식물을 키우고 싶은데 어떤 식물을 키워야 할지 모르겠나요?<br />
-        선인장도 말라 죽는다구요? 걱정마세요! 키우기 쉬운 식물로만 선정했어요.
-        <br />
-        테스트를 통해 당신에게 딱 맞는 식물을 추천해 드릴게요! 🙌
-      </p>
-      <button onclick="start()">테스트 시작!</button>
-    </section>
-    <section id="qna" class="hide">
-      <div class="status">
-        <div class="statusBar"></div>
+    <main>
+      <section id="main">
+        <div class="main-title"></div>
+        <h4>나만의 반려식물 찾기 테스트 🌱</h4>
+        <p>
+          식물을 키우고 싶은데 어떤 식물을 키워야 할지 모르겠나요?<br />
+          선인장도 말라 죽는다구요? 걱정마세요! 키우기 쉬운 식물로만 선정했어요.
+          <br />
+          테스트를 통해 당신에게 딱 맞는 식물을 추천해 드릴게요! 🙌
+        </p>
+        <button type="button" onclick="start()">테스트 시작!</button>
+      </section>
+      <section id="qna" class="hide">
+        <div class="status">
+          <div class="statusBar"></div>
+        </div>
+        <div class="questionContainer"></div>
+        <div class="anwerContainer"></div>
+      </section>
+      <section id="result" class="hide">
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div class="resultName"></div>
+        <div class="resultDesc">
+          <ul></ul>
+        </div>
+        <div class="result-tip">
+          <h6>💖 알아두면 좋은 TIP!</h6>
+          <ul>
+            <li>
+              물을 조금씩 자주 주면 과습의 원인이 될 수 있어요.<br />
+              흙이 말랐을 때 밑에 물이 빠질 정도로 흠뻑 주세요!
+            </li>
+            <li>
+              갑자기 잎이 노래지거나 줄기만 보기 싫게 자랐나요? 빛이 부족해서
+              그럴 수 있어요! 밝은 곳으로 옮겨주세요.
+            </li>
+          </ul>
+        </div>
+        <button id="kakao" type="button">공유하기</button>
+        <button type="button" onclick="goToMain()">다시하기</button>
+      </section>
+      <div id="splash" class="hide">
+        <h4>당신에게 어울리는 식물은...🌱</h4>
+
+        <div id="loading"></div>
       </div>
-      <div class="questionContainer"></div>
-      <div class="anwerContainer"></div>
-    </section>
-    <section id="result" class="hide">
-      <h4>당신에게 어울리는 식물은...🌱</h4>
-      <div class="resultName"></div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div class="resultDesc"></div>
-      <button type="button">공유하기</button>
-      <button type="button" onclick="goToMain()">다시하기</button>
-    </section>
+    </main>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
