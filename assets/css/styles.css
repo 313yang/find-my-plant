@@ -61,7 +61,7 @@ button[type="button"] {
   height: 50px;
   border-radius: 3px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   background-color: var(--green);
   cursor: pointer;

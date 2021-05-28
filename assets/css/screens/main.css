@@ -12,6 +12,18 @@
   font-size: 14px;
   margin-bottom: 30px;
 }
+
+#main button {
+  margin-top: 20px;
+}
+#kakao-link-btn {
+  background-color: var(--yellow);
+  margin-top: 0;
+}
+#kakao-link-btn:hover {
+  background-color: var(--yellow-hover);
+}
+
 @media (max-width: 700px) {
   #main {
     height: 100vh;

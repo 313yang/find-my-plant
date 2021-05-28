@@ -19,7 +19,6 @@
       Kakao.init("0a24e6f8f0d4e74456f205ea55255500");
       Kakao.isInitialized();
     </script>
-
     <title>Find My Plant | 반려식물 찾기 테스트</title>
   </head>
   <body>
@@ -34,7 +33,10 @@
           <br />
           테스트를 통해 당신에게 딱 맞는 식물을 추천해 드릴게요!
         </p>
-        <button type="button" onclick="js:start()">테스트 시작!</button>
+        <button id="kakao-link-btn" type="button" onclick="js:kakaoShare()">
+          테스트 공유하기
+        </button>
+        <button type="button" onclick="js:start()">테스트 시작하기</button>
       </section>
       <section id="qna" class="hide">
         <div class="status">
@@ -64,9 +66,6 @@
             </li>
           </ul>
         </div>
-        <button id="kakao" type="button" onclick="js:kakaoShare()">
-          공유하기
-        </button>
         <button type="button" onclick="js:goToMain()">다시하기</button>
       </section>
       <div id="splash" class="hide">
