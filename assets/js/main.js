@@ -118,19 +118,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[12].img;
-          resultName.innerText = resultList[12].name;
+          resultName.innerHTML = resultList[12].name;
           resultDesc.innerHTML = resultList[12].desc;
           //console.log("대형 무늬 음지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[13].img;
-          resultName.innerText = resultList[13].name;
+          resultName.innerHTML = resultList[13].name;
           resultDesc.innerHTML = resultList[13].desc;
           //console.log("대형 무늬 음지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[14].img;
-          resultName.innerText = resultList[14].name;
+          resultName.innerHTML = resultList[14].name;
           resultDesc.innerHTML = resultList[14].desc;
           //console.log("대형 무늬 음지 1주");
         }
@@ -139,19 +139,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[15].img;
-          resultName.innerText = resultList[15].name;
+          resultName.innerHTML = resultList[15].name;
           resultDesc.innerHTML = resultList[15].desc;
           //console.log("대형 무늬 양지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[16].img;
-          resultName.innerText = resultList[16].name;
+          resultName.innerHTML = resultList[16].name;
           resultDesc.innerHTML = resultList[16].desc;
           //console.log("대형 무늬 양지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[17].img;
-          resultName.innerText = resultList[17].name;
+          resultName.innerHTML = resultList[17].name;
           resultDesc.innerHTML = resultList[17].desc;
           //console.log("대형 무늬 양지 일주");
         }
@@ -163,19 +163,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[18].img;
-          resultName.innerText = resultList[18].name;
+          resultName.innerHTML = resultList[18].name;
           resultDesc.innerHTML = resultList[18].desc;
           //console.log("대형 무난 음지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[19].img;
-          resultName.innerText = resultList[19].name;
+          resultName.innerHTML = resultList[19].name;
           resultDesc.innerHTML = resultList[19].desc;
           //console.log("대형 무난 음지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[20].img;
-          resultName.innerText = resultList[20].name;
+          resultName.innerHTML = resultList[20].name;
           resultDesc.innerHTML = resultList[20].desc;
           //console.log("대형 무난 음지 1주");
         }
@@ -184,19 +184,19 @@ const goResult = () => {
         if (num.indexOf("7") === 3) {
           //한달
           img.src = resultList[21].img;
-          resultName.innerText = resultList[21].name;
+          resultName.innerHTML = resultList[21].name;
           resultDesc.innerHTML = resultList[21].desc;
           //console.log("대형 무난 양지 한달");
         } else if (num.indexOf("8") === 3) {
           //2week
           img.src = resultList[22].img;
-          resultName.innerText = resultList[22].name;
+          resultName.innerHTML = resultList[22].name;
           resultDesc.innerHTML = resultList[22].desc;
           //console.log("대형 무난 양지 2주");
         } else if (num.indexOf("9") === 3) {
           //1week
           img.src = resultList[23].img;
-          resultName.innerText = resultList[23].name;
+          resultName.innerHTML = resultList[23].name;
           resultDesc.innerHTML = resultList[23].desc;
           ////console.log("대형 무난 양지 1주");
         }

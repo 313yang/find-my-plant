@@ -5,7 +5,7 @@
 }
 #qna .questionContainer {
   text-align: left;
-  width: 320px;
+  width: 75%;
   position: absolute;
   top: 90px;
 }
@@ -23,4 +23,12 @@
 .answerList:hover {
   color: white;
   background-color: var(--green);
+}
+@media (max-width: 700px) {
+  #qna {
+    height: 100vh;
+  }
+  .anwerContainer {
+    margin-bottom: 60px;
+  }
 }
