@@ -12,6 +12,7 @@
 .answerList {
   width: 100%;
   height: 60px;
+  font-size: 14px;
   margin-top: 25px;
   border-radius: 10px;
   border: 1px solid var(--green);
@@ -20,7 +21,8 @@
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
-.answerList:hover {
+.answerList:hover,
+.answerList:focus {
   color: white;
   background-color: var(--green);
 }

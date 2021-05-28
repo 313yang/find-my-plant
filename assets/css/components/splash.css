@@ -32,7 +32,7 @@
   animation: fadeinout 2.5s ease-in-out;
 }
 #splash h4 {
-  width: 420px;
+  width: 100%;
   margin: 0 auto;
   color: white;
   font-size: 20px;
