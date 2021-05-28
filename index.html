@@ -58,7 +58,9 @@
             </li>
           </ul>
         </div>
-        <button id="kakao" type="button">공유하기</button>
+        <button id="kakao" type="button" onclick="kakaoShare()">
+          공유하기
+        </button>
         <button type="button" onclick="goToMain()">다시하기</button>
       </section>
       <div id="splash" class="hide">
@@ -67,7 +69,13 @@
         <div id="loading"></div>
       </div>
     </main>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+      Kakao.init("0a24e6f8f0d4e74456f205ea55255500");
+      Kakao.isInitialized();
+    </script>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/share.js"></script>
   </body>
 </html>
