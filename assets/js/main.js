@@ -4,9 +4,9 @@ const result = document.getElementById("result");
 const q = document.querySelector(".questionContainer");
 const a = document.querySelector(".anwerContainer");
 const status = document.querySelector(".statusBar");
-const resultName = result.querySelector(".resultName");
+const resultName = result.querySelector(".result-name");
 const img = result.querySelector("img");
-const resultDesc = result.querySelector(".resultDesc ul");
+const resultDesc = result.querySelector(".result-desc ul");
 const splash = document.getElementById("splash");
 
 let endPoint = 5;
